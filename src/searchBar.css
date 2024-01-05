@@ -1,0 +1,25 @@
+/* styles.css */
+
+
+  
+  .search-bar-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 10px;
+    border-radius: 5px;
+    width: 700px;
+  }
+  
+  .search-bar-container input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  /* Additional styling for your medicine components or other content goes here */
+  
