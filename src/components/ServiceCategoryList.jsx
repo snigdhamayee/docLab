@@ -14,6 +14,8 @@ const ServiceCategoryList = () => {
     return (
       <div className="container mt-4">
         <div className="row">
+        <h4>Top services provided by our team </h4>
+        <p style={{ fontSize: '14px' }}>Both online and offLine Services  </p>
           {serviceCategories.map((service, index) => (
            <div key={index} className="col-lg-2 col-md-3 col-sm-6 mb-3" style={{ marginRight: '40px' }}>
               <div className="card" style={{ height: '250px', borderRadius: '30px' }}>

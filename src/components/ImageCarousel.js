@@ -1,6 +1,7 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import  '../styles.css';
 
 const sliderSettings = {
   dots: true,
@@ -20,23 +21,58 @@ const sliderContainerStyle = {
 };
 
 const MySlider = () => (
-  <div style={sliderContainerStyle}>
-    <Slider {...sliderSettings}>
-      {/* Your slider content here */}
-      <div className="divBgclr1">
-        <img src="/th.jpg" alt="Slide 1" className="slider-image" />
-        <div className="blinking-star">* Free</div>
+  // <div style={sliderContainerStyle}>
+  //   <Slider {...sliderSettings}>
+  //     {/* Your slider content here */}
+  //     <div className="divBgclr1">
+  //       <img src="/th.jpg" alt="Slide 1" className="slider-image" />
+  //       <div className="blinking-star">* Free</div>
+  //     </div>
+  //     <div className="divBgclr2">
+  //       <img src="/OIP.jpg" alt="Slide 2" className="slider-image" />
+  //       <div className="blinking-star">* Free</div>
+  //     </div>
+  //     <div className="divBgclr3">
+  //       <img src="/OIP (1).jpg" alt="Slide 3" className="slider-image" />
+  //       <div className="blinking-star">* Free</div>
+  //     </div>
+  //   </Slider>
+  // </div>
+  <section class="main-container">
+  <div class="main">
+    <div class="big-circle">
+      <div class="icon-block">
+        <img src="https://www.yudiz.com/codepen/animated-portfolio/web-dev-icon.png" alt="web design icon" />
       </div>
-      <div className="divBgclr2">
-        <img src="/OIP.jpg" alt="Slide 2" className="slider-image" />
-        <div className="blinking-star">* Free</div>
+      <div class="icon-block">
+        <img src="https://www.yudiz.com/codepen/animated-portfolio/game-design-icon.png" alt="game design icon" />
       </div>
-      <div className="divBgclr3">
-        <img src="/OIP (1).jpg" alt="Slide 3" className="slider-image" />
-        <div className="blinking-star">* Free</div>
+      <div class="icon-block">
+        <img src="https://www.yudiz.com/codepen/animated-portfolio/game-dev-icon.png" alt="game dev icon" />
       </div>
-    </Slider>
+      <div class="icon-block">
+        <img src="https://www.yudiz.com/codepen/animated-portfolio/ui-ux-icon.png" alt="ui-ux icon" />
+      </div>
+    </div>
+    <div class="circle">
+      <div class="icon-block">
+        <img src="https://www.yudiz.com/codepen/animated-portfolio/app-icon.png" alt="app icon" />
+      </div>
+      <div class="icon-block">
+        <img src="https://www.yudiz.com/codepen/animated-portfolio/blockchain-icon.png" alt="blockchain icon" />
+      </div>
+      <div class="icon-block">
+        <img src="https://www.yudiz.com/codepen/animated-portfolio/arvr-icon.png" alt="ar-vr icon" />
+      </div>
+      <div class="icon-block">
+        <img src="https://www.yudiz.com/codepen/animated-portfolio/artificial-intelligence-icon.png" alt="artificial intelligence icon" />
+      </div>
+    </div>
+    <div class="center-logo">
+      <img src="/download.png" alt="logo" height={200} width={200} />
+    </div>
   </div>
+</section>
 );
 
 export default MySlider;
